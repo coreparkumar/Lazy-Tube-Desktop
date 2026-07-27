@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+dist/
+.vite/
+
+# Secrets (NEVER commit these)
+data/youtube_token.pickle
+data/client_secrets.json
+.env
+.env.local
+
+# Logs & outputs
+logs/
+output/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+.tokensave

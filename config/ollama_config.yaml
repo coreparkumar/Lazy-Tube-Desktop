@@ -1,0 +1,13 @@
+ollama:
+  base_url: "http://localhost:11434"
+  models:
+    fast: "phi3:mini"
+    balanced: "llama3.1"
+    quality: "mistral"
+  assignment:
+    title: "llama3.1"
+    description: "llama3.1"
+    tags: "llama3.1"
+    category: "llama3.1"
+    hashtag: "llama3.1"
+    thumbnail: "llama3.1"

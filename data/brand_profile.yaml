@@ -1,0 +1,157 @@
+# ============================================================
+#  BRAND PROFILE - CorePar Kumar
+#  Channel focus: Developer portfolio, problem-solving projects,
+#  productivity tools, live coding sessions
+#  Generated for: lazy-tube AI metadata generator
+# ============================================================
+
+channel:
+  name: "urBlockster"
+  tone: "clear, direct, builder-first, occasional dry humor, practical no-fluff"
+  audience: "developers, indie hackers, students, productivity enthusiasts, fellow builders"
+  about: "I build projects that solve real problems and make me (and you) more productive. Each video walks through a real project — design, code, mistakes, and lessons. New builds every week."
+
+visual_brand:
+  primary_color: "#00D4FF"      # Signature cyan (matches your existing profile feel)
+  secondary_color: "#0A0E27"    # Deep navy - code background feel
+  accent_color: "#FFD60A"       # Yellow highlight - for emphasis text on thumbs
+  font_title: "JetBrains Mono Bold"   # Developer-flavored monospace
+  font_subtitle: "Inter"
+  logo_position: "bottom-right"
+  mood: "techy, terminal-inspired, code-on-dark, real project demos, IDE-like"
+
+title_style:
+  pattern: "I Built {project} to Solve {problem}"
+  alt_patterns:
+    - "Building {project} in {timeframe}"
+    - "{project}: {outcome} in {timeframe}"
+    - "How I Solved {problem} with {project}"
+  emoji_usage: "minimal, max 1, prefer icons: ⚡ 🚀 💡 🔧 ⚙️"
+  caps_usage: "selective - for product names and numbers only"
+  examples:
+    - "I Built an AI Note Taker to Solve My Memory Problems"
+    - "Building a CLI Task Manager in 30 Minutes"
+    - "Habit Tracker App: From Idea to MVP in 7 Days"
+    - "How I Solved My Dev Setup Chaos with One Script"
+    - "Building a Personal CRM to Stop Forgetting People"
+
+description_template: |
+  {hook_2_lines}
+
+  In this video, I build / demo {project}:
+  {bullets}
+
+  What you'll see:
+  - The problem I'm solving
+  - The tech stack & why
+  - Live build / walkthrough
+  - Honest review: what worked, what didn't
+
+  Timestamps:
+  0:00 Intro & the problem
+  1:00 Project overview
+  3:00 Build / demo start
+  {more_chapters}
+
+  Links & resources:
+  - Portfolio: https://coreparkumar.github.io/portfolio
+  - GitHub: https://github.com/coreparkumar
+  - Project repo: {repo_link}
+  - Live demo: {demo_link}
+
+  --------------------
+  About this channel:
+  I build projects that solve my own problems - and document the process. New project videos every week. If you build things, you're in the right place.
+
+  {hashtags}
+
+tag_patterns:
+  - "{topic}"
+  - "{topic} project"
+  - "{topic} tutorial"
+  - "build in public"
+  - "developer portfolio"
+  - "indie hacker"
+  - "productivity tools"
+  - "coding project"
+  - "side project"
+  - "open source"
+
+hashtags_fixed:
+  - "CoreParBuilds"          # Your channel tag
+  # NOTE: YouTube only shows the first 3 hashtags above the title.
+  # The rest go in the description. Order matters.
+
+category_default: 28          # Science & Technology (default for dev content)
+# If you do pure productivity / life-hack videos with no code, switch to 26 (Howto & Style)
+# If you do personal vlog-style project updates, switch to 22 (People & Blogs)
+
+youtube_defaults:
+  visibility: "private"        # Always start private, manually flip to public
+  made_for_kids: false
+  embeddable: true
+  license: "youtube"
+  default_language: "en"
+  default_audio_language: "en"
+
+# ============================================================
+#  CHANNEL BRACKET SYSTEM
+#  Same channel, multiple series, each with its own playlist
+#  and visual mood for thumbnails.
+# ============================================================
+channel_bracket_system:
+  - topic: "AI-powered productivity tools"
+    playlist_name: "AI Productivity Builds"
+    visual_mood: "futuristic, neural networks, glow effects, dark backgrounds, cyan + purple"
+    color_overrides:
+      accent: "#A855F7"      # Purple accent for AI series
+    hashtag_overrides:
+      - "AItools"
+      - "AIproductivity"
+
+  - topic: "Developer CLI tools & scripts"
+    playlist_name: "CLI & Dev Tooling"
+    visual_mood: "terminal screenshots, code snippets, monospace fonts, green-on-black aesthetic"
+    color_overrides:
+      primary: "#00FF88"     # Terminal green
+      accent: "#FFFFFF"
+    hashtag_overrides:
+      - "CLI"
+      - "DevTools"
+
+  - topic: "Web apps & SaaS builds"
+    playlist_name: "Web App Builds"
+    visual_mood: "clean UI, browser mockups, dashboard screenshots, modern flat design"
+    color_overrides:
+      primary: "#3B82F6"     # Blue
+      accent: "#F59E0B"      # Orange
+    hashtag_overrides:
+      - "WebDev"
+      - "SaaS"
+
+  - topic: "Mobile apps"
+    playlist_name: "Mobile App Builds"
+    visual_mood: "phone mockups, app icons, iOS/Android UI, hand holding phone"
+    hashtag_overrides:
+      - "MobileDev"
+
+  - topic: "Productivity systems & life hacks"
+    playlist_name: "Productivity Systems"
+    visual_mood: "minimal, Notion-style, calendars, planners, clean white/light"
+    color_overrides:
+      primary: "#10B981"     # Green
+      secondary: "#F9FAFB"   # Light bg
+    hashtag_overrides:
+      - "Productivity"
+      - "LifeHacks"
+    notes: "This bracket switches the visual to light backgrounds - use sparingly so your channel stays consistent."
+
+# ============================================================
+#  OPTIONAL: UPLOAD SCHEDULE
+#  Helps AI write better descriptions with realistic expectations
+# ============================================================
+upload_schedule:
+  frequency: "weekly"
+  preferred_day: "Sunday"        # Optional: helps with "next video" CTAs
+  typical_length_min: 8          # Average video length
+  typical_length_max: 25

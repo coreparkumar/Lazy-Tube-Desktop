@@ -1,0 +1,33 @@
+# ============================================================
+#  lazy-tube requirements (Megamind-style pinned versions)
+# ============================================================
+
+# Core API
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+
+# Pydantic ecosystem (v2 — explicit, not transitive)
+pydantic==2.10.4
+pydantic-core==2.27.2
+pydantic-settings==2.7.0
+
+# HTTP clients
+httpx==0.28.1
+requests==2.32.3
+
+# Config & serialization
+pyyaml==6.0.2
+python-dotenv==1.0.1
+
+# YouTube API
+google-api-python-client==2.155.0
+google-auth-oauthlib==1.2.1
+google-auth-httplib2==0.2.0
+
+# Build helpers (optional — for PyInstaller packaging later)
+pyinstaller==6.12.0
+pyinstaller-hooks-contrib>=2025.1
+pefile>=2022.5.30,!=2024.8.26
+pywin32-ctypes==0.2.3
+Pillow>=10.0.0
+PyYAML>=6.0

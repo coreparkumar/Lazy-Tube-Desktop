@@ -1,0 +1,57 @@
+# ============================================================
+#  YouTube Backend Configuration
+#  Controls how the API client connects and uploads
+# ============================================================
+
+youtube:
+  # ---- OAuth credentials ----
+  client_secrets_file: "data/client_secrets.json"
+  token_file: "../data/youtube_token.pickle"
+  
+  # ---- Upload defaults ----
+  default_visibility: "private"        # private | unlisted | public
+  default_category_id: 28              # 28 = Science & Technology
+  default_language: "en"
+  default_audio_language: "en"
+  
+  # ---- Video metadata defaults ----
+  made_for_kids: false
+  embeddable: true
+  license: "youtube"                   # "youtube" or "creativeCommon"
+  public_stats_viewable: true
+  
+  # ---- Tags & hashtag limits ----
+  max_tags: 30
+  max_hashtags: 15                     # YouTube allows up to 15 in description
+
+# ---- Upload performance ----
+upload:
+  chunk_size_mb: 10                   # 10MB = good for most networks
+                                        # 5MB = slower but more reliable
+                                        # 20MB = faster but requires stable connection
+  max_retries: 5
+  retry_backoff: "exponential"         # exponential | linear
+  timeout_seconds: 3600                # 1 hour max per upload
+  resumable: true                      # always true for files > 5MB
+
+# ---- Thumbnail ----
+thumbnail:
+  auto_set: true                       # set custom thumbnail after upload
+  formats_allowed: ["jpg", "jpeg", "png"]
+  max_size_mb: 2
+  min_resolution: "1280x720"           # YouTube minimum for high-res
+  recommended_resolution: "1920x1080"  # 16:9 full HD
+
+# ---- Captions (auto-upload SRT) ----
+captions:
+  auto_upload: true
+  default_language: "en"
+  languages: ["en"]                    # extend later for multi-language
+  format: "srt"                        # srt | vtt
+
+# ---- API behavior ----
+api:
+  fetch_channel_info: true             # show channel name in UI
+  fetch_playlists: true                # enable bracket → playlist matching
+  fetch_recent_thumbnails: true        # for style reference
+  recent_thumbnails_count: 5
